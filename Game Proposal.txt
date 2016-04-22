@@ -1,0 +1,6 @@
+We are doing an endless runner with random obstacles such as bottomless pits and flying enemies. 
+The goal of the game is to keep running right and collect coins to earn points over time. 
+There will be a counter displayed on screen with the player coin count. 
+As the game goes on it progressively gets faster. 
+If the player doesn't collect coins and their points go below 0, they automatically lose. 
+Basically, a scrolling platformer. We are using unity.
