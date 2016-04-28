@@ -11,3 +11,7 @@
 /Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Danny/Desktop/Git/EndlessRunner/obj/Debug/Assembly-CSharp.dll
+/Users/Danny/Desktop/Git/EndlessRunner/obj/Debug/Assembly-CSharp.dll.mdb
