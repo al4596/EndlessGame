@@ -1,0 +1,13 @@
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/UnityEngine.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/UnityEditor.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Danny/Desktop/Git/EndlessRunner/Temp/bin/Debug/Mono.Cecil.Mdb.dll
