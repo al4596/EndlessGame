@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	private Collider2D myCollider;
 	private Animator myAnimator;
-
+	public float lockPos = 0;
 
 
 	// Use this for initialization
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
 		grounded = Physics2D.IsTouchingLayers (myCollider, whatIsGround);
 		myRigidbody.velocity = new Vector2 (moveSpeed, myRigidbody.velocity.y);
 		if (grounded) {

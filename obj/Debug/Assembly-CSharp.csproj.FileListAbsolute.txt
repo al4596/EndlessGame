@@ -1,0 +1,2 @@
+C:\Users\Rudi\Documents\GitHub\Endless\EndlessGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Rudi\Documents\GitHub\Endless\EndlessGame\obj\Debug\Assembly-CSharp.dll
