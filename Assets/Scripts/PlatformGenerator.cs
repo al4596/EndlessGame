@@ -22,9 +22,11 @@ public class PlatformGenerator : MonoBehaviour {
 	public float maxHeightChange;
 	private float heightChange;
 
+	private DiamondGenerator theDiamondGenerator;
+
 	// Use this for initialization
 	void Start () {
-		//platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;
+		//platformWidth = thePlatform.GetComponent<BoxCol	lider2D> ().size.x;
 
 		platformWidths = new float[theObjectPools.Length];
 
@@ -34,7 +36,7 @@ public class PlatformGenerator : MonoBehaviour {
 		}
 		minHeight = transform.position.y;
 		maxHeight = maxHeightPoint.position.y;
-
+		theDiamondGenerator = FindObjectOfType<DiamondGenerator> ();
 	}
 	
 	// Update is called once per frame
@@ -49,6 +51,12 @@ public class PlatformGenerator : MonoBehaviour {
 
 			heightChange = transform.position.y + Random.Range (maxHeightChange, -maxHeightChange);
 
+			if (heightChange > maxHeight) {
+				heightChange = maxHeight;
+			} else if (heightChange < minHeight) {
+				heightChange = minHeight;
+			}
+
 			transform.position = new Vector2 (transform.position.x + (platformWidths[platformSelector]/2) + distanceBetween, heightChange);
 
 
@@ -58,6 +66,8 @@ public class PlatformGenerator : MonoBehaviour {
 			newPlatform.transform.position = transform.position;
 			newPlatform.transform.rotation = transform.rotation;
 			newPlatform.SetActive (true);
+
+			theDiamondGenerator.SpawnDiamonds (new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z));
 
 			transform.position = new Vector2 (transform.position.x + (platformWidths[platformSelector]/2), transform.position.y);
 
