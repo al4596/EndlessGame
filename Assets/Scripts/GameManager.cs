@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 	private Vector3 playerStartPoint;
 	private ScoreManager theScoreManager;
 
+	public DeathMenu theDeathMenu;
+
 	private PlatformDestroyer[] platformList;
 
 
@@ -23,13 +25,31 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	public void RestartGame(){
-		StartCoroutine ("RestartGameCo");	
+		theScoreManager.scoreIncreasing = false;
+		thePlayer.gameObject.SetActive (false);
+		theDeathMenu.gameObject.SetActive (true);
+		//StartCoroutine ("RestartGameCo");	
 	}
 
+	public void Reset(){
+		theDeathMenu.gameObject.SetActive (false);
+		platformList = FindObjectsOfType<PlatformDestroyer> ();
+		for (int i = 0; i < platformList.Length; i++) {
+			platformList [i].gameObject.SetActive (false);
+		}
+		thePlayer.transform.position = playerStartPoint;
+		platformGenerator.position = platformStartPoint;
+		thePlayer.gameObject.SetActive (true);
+		theScoreManager.scoreCount = 0;
+		theScoreManager.scoreIncreasing = true;
+	}
+
+
+	/*
 	public IEnumerator RestartGameCo(){
 		theScoreManager.scoreIncreasing = false;
 		thePlayer.gameObject.SetActive (false);
@@ -44,4 +64,5 @@ public class GameManager : MonoBehaviour {
 		theScoreManager.scoreCount = 0;
 		theScoreManager.scoreIncreasing = true;
 	}
+	*/
 }
